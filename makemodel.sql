@@ -1,28 +1,16 @@
--- --------------------------------------------------------
--- Host:                         rgnvs09
--- Server versie:                10.0.12-MariaDB-1~precise-log - mariadb.org binary distribution
--- Server OS:                    debian-linux-gnu
--- HeidiSQL Versie:              9.1.0.4867
--- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Databasestructuur van cic_dev4_amsterdam wordt geschreven
-CREATE DATABASE IF NOT EXISTS `cic_dev4_amsterdam` /*!40100 DEFAULT CHARACTER SET utf8 */;
-USE `cic_dev4_amsterdam`;
-
-
--- Structuur van  tabel cic_dev4_amsterdam.veh_brand wordt geschreven
 CREATE TABLE IF NOT EXISTS `veh_brand` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `brand` varchar(50) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=288 DEFAULT CHARSET=utf8;
 
--- Dumpen data van tabel cic_dev4_amsterdam.veh_brand: ~157 rows (ongeveer)
+
 DELETE FROM `veh_brand`;
 /*!40000 ALTER TABLE `veh_brand` DISABLE KEYS */;
 INSERT INTO `veh_brand` (`id`, `brand`) VALUES
